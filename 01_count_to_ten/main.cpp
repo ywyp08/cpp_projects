@@ -1,4 +1,5 @@
-#include <stdio.h>
+#include <iostream>
+using namespace std;
 
 int main(void)
 {
@@ -6,8 +7,6 @@ int main(void)
 
 	x = 0;
 	while (x < 10)
-	{
-		printf("%d\n", x++);
-	}
-	return(0);
+		cout << x++ << "\n";	
+	return 0;
 }
