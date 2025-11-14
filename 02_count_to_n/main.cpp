@@ -7,12 +7,12 @@ int main(int argc, char **argv)
 
 	if (argc == 1)
 	{
-		std::cout << "Enter a number\n";
+		std::cerr << "Enter a number\n";
 		return -1;
 	}
 	if (argc > 2)
 	{
-		std::cout << "Enter one number\n";
+		std::cerr << "Enter one number\n";
 		return -1;
 	}
 	if (argc == 2)
