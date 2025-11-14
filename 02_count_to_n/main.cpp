@@ -1,5 +1,4 @@
 #include <iostream>
-#include <cstdlib>
 using namespace std;
 
 int main(int argc, char **argv)
@@ -20,7 +19,7 @@ int main(int argc, char **argv)
 	if (argc == 2)
 	{
 		n = 0;
-		x = atoi(argv[1]);
+		x = stoi(argv[1]);
 		while (x > n)
 			cout << n++ << "\n";
 	}
