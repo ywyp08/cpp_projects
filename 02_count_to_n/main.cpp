@@ -1,5 +1,4 @@
 #include <iostream>
-using namespace std;
 
 int main(int argc, char **argv)
 {
@@ -8,20 +7,20 @@ int main(int argc, char **argv)
 
 	if (argc == 1)
 	{
-		cout << "Enter a number\n";
+		std::cout << "Enter a number\n";
 		return -1;
 	}
 	if (argc > 2)
 	{
-		cout << "Enter one number\n";
+		std::cout << "Enter one number\n";
 		return -1;
 	}
 	if (argc == 2)
 	{
 		n = 0;
-		x = stoi(argv[1]);
+		x = std::stoi(argv[1]);
 		while (x > n)
-			cout << n++ << "\n";
+			std::cout << n++ << "\n";
 	}
 	return 0;
 }
