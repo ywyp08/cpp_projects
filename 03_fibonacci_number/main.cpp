@@ -11,8 +11,7 @@ int fibonacci(int n)
 
 int main(int argc, char **argv)
 {
-	int n;
+	int n {std::stoi(argv[1])};
 
-	n = std::stoi(argv[1]);
 	std::cout << fibonacci(n) << "\n";
 }

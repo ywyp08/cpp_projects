@@ -2,12 +2,10 @@
 
 int main(int argc, char **argv)
 {
-	int n;
-	int x;
+	int n {0};
+	int x {std::stoi(argv[1])};
 
 	if (argc == 2) {
-		n = 0;
-		x = std::stoi(argv[1]);
 		while (x > n)
 			std::cout << n++ << "\n";
 		return 0;

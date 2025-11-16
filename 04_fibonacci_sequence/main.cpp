@@ -11,9 +11,8 @@ int fibonacci(int n)
 
 void fibonacci_sequence(int n)
 {
-	int x;
+	int x {0};
 
-	x = 0;
 	while (n > x) {
 		std::cout << fibonacci(x++) << std::endl;
 	}
@@ -21,8 +20,7 @@ void fibonacci_sequence(int n)
 
 int main(int argc, char **argv)
 {
-	int n;
-
-	n = std::stoi(argv[1]);
+	int n {std::stoi(argv[1])};
+	
 	fibonacci_sequence(n);
 }
