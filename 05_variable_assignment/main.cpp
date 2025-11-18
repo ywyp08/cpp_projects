@@ -5,19 +5,21 @@ int main()
 {
 	int n {0};
 	int m {1};
+	int& r = m;
 
 	cout << "n: " << n << endl;
 	cout << "m: " << m << endl;
+	cout << "r: " << r << endl;
 
-	cout << "\nn = m" << endl;
 	n = m;
-
+	cout << "\nn = m" << endl;
 	cout << "n: " << n << endl;
 	cout << "m: " << m << endl;
+	cout << "r: " << r << endl;
 
-	cout << "\nm++" << endl;
 	m++;
-
+	cout << "\nm++" << endl;
 	cout << "n: " << n << endl;
 	cout << "m: " << m << endl;
+	cout << "r: " << r << endl;
 }
